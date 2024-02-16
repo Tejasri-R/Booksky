@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pro</title>
+    <link rel="stylesheet" href="pro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <h1>BOOKSKY</h1>
+    </div>
+    <div class="container">
+      <div class="book-container">
+        <h2>Rich Dad Poor Dad</h2>
+        <br />
+        <h3>Robert</h3>
+        <br />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus,
+          iusto? At modi deleniti cupiditate sed labore voluptates, praesentium
+          corrupti non iure culpa enim dicta vero placeat in unde quae debitis!
+        </p>
+        <button onclick="dltbook(event)">Delete</button>
+      </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+      <h2>Add Book</h2>
+      <form>
+        <input type="text" placeholder="Book Title" id="book-title" /><br />
+        <input type="text" placeholder="Author" id="book-author" /><br />
+        <textarea placeholder="description" id="description"></textarea><br />
+        <button id="add-book">Add</button>
+        <button id="cancel-popup">Cancel</button>
+      </form>
+    </div>
+
+    <button class="add-button" id="add-popup">+</button>
+    <script src="pro.js"></script>
+  </body>
+</html>
